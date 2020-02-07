@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: star_config
+  m_EditorClassIdentifier: Assembly-CSharp:star_system:StarSystemConfig
+  _planetsCount:
+    MaxValue: 6
+    MinValue: 4
+  _planetLife:
+    MaxValue: 100
+    MinValue: 100
+  _betweenPlanetDistance:
+    MaxValue: 2
+    MinValue: 1
+  _planetRadius:
+    MaxValue: 4
+    MinValue: 1
+  _planetAxisSpeed:
+    MaxValue: 0
+    MinValue: 0
+  _planetOrbitSpeed:
+    MaxValue: 0
+    MinValue: 0
+  _planetGravity:
+    MaxValue: 15
+    MinValue: 3
