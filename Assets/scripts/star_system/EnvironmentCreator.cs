@@ -33,10 +33,7 @@ namespace star_system
         private void GeneratePlanet(int id, out PlanetData data)
         {
             data = GeneratePlanetData(id);
-            Vector3 startPosition = GeneratePlanetPosition(data, id);
-            int randomPlanet = Utils.GetRandomIntValue(0, _config.PlanetPref.Length);
-            data.PlanetTransform = Instantiate(_config.PlanetPref[randomPlanet], startPosition, Quaternion.identity, this.transform).transform;
-            //data.PlanetTransform.localScale = Vector3.one * data.Radius * 2;
+            GenerateGameObject(data);
         }
 
         private PlanetData GeneratePlanetData(int id)
@@ -44,13 +41,22 @@ namespace star_system
             int lifes = Utils.GetRandomIntValue(_config.PlanetLife);
             float radius = Utils.GetRandomFloatValue(_config.PlanetRadius);
             float axisSpeed = Utils.GetRandomFloatValue(_config.PlanetAxisSpeed);
-            float orbitSpeed = Utils.GetRandomFloatValue(_config.OrbitSpeed);
             float gravity = Utils.GetRandomFloatValue(_config.PlanetGravity);
 
             PlanetData data = new PlanetData(id, radius, lifes, axisSpeed, gravity);
-            data.OrbitSpeed = orbitSpeed;
 
             return data;
+        }
+
+        private Planet GenerateGameObject(PlanetData data)
+        {
+            int randomPlanet = Utils.GetRandomIntValue(0, _config.PlanetPref.Length);
+            Vector3 startPosition = GeneratePlanetPosition(data, id);
+            Planet planet = Instantiate(_config.PlanetPref[randomPlanet], startPosition, Quaternion.identity, this.transform).GetComponent<star_system.Planet>();
+            float orbitSpeed = Utils.GetRandomFloatValue(_config.OrbitSpeed);
+
+            data.PlanetObject = planet;
+            return data.PlanetObject
         }
 
         private Vector3 GeneratePlanetPosition(PlanetData data, int step)

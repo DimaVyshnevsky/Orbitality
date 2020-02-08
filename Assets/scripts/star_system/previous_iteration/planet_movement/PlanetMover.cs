@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace star_system
+namespace old_data
 {
     public abstract class PlanetMover : MonoBehaviour
     {
-        public abstract void Init(PlanetData data);
-        public abstract Vector2 Evaluate(PlanetData data);
+       //public abstract void Init(PlanetData data);
+       //public abstract Vector2 Evaluate(PlanetData data);
     }
 }

@@ -18,13 +18,8 @@ namespace star_system
         private int _lifes;
         private float _axisSpeed;
 
-        public float OrbitSpeed;
-        public float OrbitProgress;
-        public float XAxis;
-        public float YAxis;
-
         public float DistanceFromCenter;
-        public Transform PlanetTransform;
+        public Planet PlanetObject;
 
         public int ID => _id;
         public int Lifes => _lifes;

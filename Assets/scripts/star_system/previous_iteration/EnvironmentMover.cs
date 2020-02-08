@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace star_system
+namespace old_data
 {
     public class EnvironmentMover : MonoBehaviour
     {
-        private PlanetMover _movementType;
+        /*private PlanetMover _movementType;
         private EnvironmentCreator _spaceObjectContainer;
         private bool initialize;
 
@@ -33,26 +33,26 @@ namespace star_system
                 if (data.Lifes <= 0)
                     continue;
 
-                //data.PlanetTransform.localPosition = GetNewPlanetPosition(data);
+                data.PlanetTransform.localPosition = GetNewPlanetPosition(data);
                 RotatePlanet(data);
             }
         }
 
-        //private Vector3 GetNewPlanetPosition(PlanetData data)
-        //{
-            /*if (data.OrbitSpeed < 0.1f)
+        private Vector3 GetNewPlanetPosition(PlanetData data)
+        {
+            if (data.OrbitSpeed < 0.1f)
                 data.OrbitSpeed = 0.1f;
 
             float orbitSpeed = 1f / data.OrbitSpeed;
             data.OrbitProgress += Time.deltaTime * orbitSpeed;
             data.OrbitProgress %= 1f;
             Vector2 orbitPosition = _movementType.Evaluate(data);
-            return new Vector3(orbitPosition.x, 0, orbitPosition.y);*/
-        //}
+            return new Vector3(orbitPosition.x, 0, orbitPosition.y);
+       }
 
         private void RotatePlanet(PlanetData data)
         {
-            //data.PlanetTransform.transform.Rotate(Vector3.up, data.AxisSpeed);
-        }
+            data.PlanetTransform.transform.Rotate(Vector3.up, data.AxisSpeed);
+        }*/
     }
 }

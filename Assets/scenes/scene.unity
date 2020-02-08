@@ -352,37 +352,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 954348963, guid: b9ce853eff8785797b767dc29cadc416, type: 3}
+      propertyPath: _planet
+      value: 
+      objectReference: {fileID: 954348962}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9ce853eff8785797b767dc29cadc416, type: 3}
---- !u!1 &954348961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7340780962056047233, guid: b9ce853eff8785797b767dc29cadc416,
-    type: 3}
-  m_PrefabInstance: {fileID: 954348960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &954348962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4455099582485578506, guid: b9ce853eff8785797b767dc29cadc416,
     type: 3}
   m_PrefabInstance: {fileID: 954348960}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &954348963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954348961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370d1c6bb4d70f42099d2aee85176e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planet: {fileID: 954348962}
-  XAxis: 0
-  YAxis: 0
-  OrbitSpeed: 0
-  OrbitProgress: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,37 +514,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 982930228, guid: 2093f740103cf4a4598307e000aa9a9f, type: 3}
+      propertyPath: _planet
+      value: 
+      objectReference: {fileID: 982930227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2093f740103cf4a4598307e000aa9a9f, type: 3}
---- !u!1 &982930226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 185148750313724450, guid: 2093f740103cf4a4598307e000aa9a9f,
-    type: 3}
-  m_PrefabInstance: {fileID: 982930225}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &982930227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6530899841880274642, guid: 2093f740103cf4a4598307e000aa9a9f,
     type: 3}
   m_PrefabInstance: {fileID: 982930225}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &982930228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982930226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370d1c6bb4d70f42099d2aee85176e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planet: {fileID: 982930227}
-  XAxis: 0
-  YAxis: 0
-  OrbitSpeed: 0
-  OrbitProgress: 0
 --- !u!1 &1631896411
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,34 +671,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1865308909, guid: 34cdffa5168aa2131a652895e49c6653, type: 3}
+      propertyPath: _planet
+      value: 
+      objectReference: {fileID: 1865308908}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34cdffa5168aa2131a652895e49c6653, type: 3}
---- !u!1 &1865308907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1916417132523018139, guid: 34cdffa5168aa2131a652895e49c6653,
-    type: 3}
-  m_PrefabInstance: {fileID: 1865308906}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1865308908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 110346574397371425, guid: 34cdffa5168aa2131a652895e49c6653,
     type: 3}
   m_PrefabInstance: {fileID: 1865308906}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1865308909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865308907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370d1c6bb4d70f42099d2aee85176e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planet: {fileID: 1865308908}
-  XAxis: 0
-  YAxis: 0
-  OrbitSpeed: 0
-  OrbitProgress: 0

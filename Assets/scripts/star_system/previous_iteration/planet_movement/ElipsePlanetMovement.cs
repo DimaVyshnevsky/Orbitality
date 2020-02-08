@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace star_system
+namespace old_data
 {
     public class ElipsePlanetMovement : PlanetMover
     {
-        [SerializeField] private float ratioXToY;
+        /*[SerializeField] private float ratioXToY;
 
         public override void Init(PlanetData data)
         {
@@ -20,6 +20,6 @@ namespace star_system
             float x = Mathf.Sin(angle) * data.XAxis;
             float y = Mathf.Cos(angle) * data.YAxis;
             return new Vector2(x, y);
-        }
+        }*/
     }
 }
