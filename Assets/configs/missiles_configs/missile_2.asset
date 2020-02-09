@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655e5fd9abecedae7b62730396cc969b, type: 3}
+  m_Name: missile_2
+  m_EditorClassIdentifier: 
+  Pref: {fileID: 3189878253374085313, guid: 6463294b384f73c8bb230400f0c9c0cf, type: 3}
+  StartAcceleration: 10
+  Speed: 40
+  SpeedMax: 40
+  SpeedMult: 1
+  LifeTime: 10
+  IsLifeTime: 1
+  Mass: 1
+  Noise: {x: 0.02, y: 0.02, z: 0.02}
+  NoiseActive: 0

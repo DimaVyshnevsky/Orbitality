@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13984971af777afe59f7ee4d05fe5324, type: 3}
+  m_Name: star_system
+  m_EditorClassIdentifier: 
+  Planets:
+  - {fileID: 11400000, guid: 314aa1951b510ea6983c2373188fd251, type: 2}
+  - {fileID: 11400000, guid: b0d1ddca9f343ae01b7b89f01da75d15, type: 2}
+  - {fileID: 11400000, guid: de7cb1e3e58ea39e7aaec414f2684e4f, type: 2}
+  - {fileID: 11400000, guid: 19fb1238b05ca35d78678053f98be55a, type: 2}

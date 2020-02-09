@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4653903b6154b42c2a09079e90a6ad9c, type: 3}
+  m_Name: planet_2
+  m_EditorClassIdentifier: 
+  Pref: {fileID: 1916417132523018139, guid: 34cdffa5168aa2131a652895e49c6653, type: 3}
+  EllipsePosition: {x: 17, y: 15}
+  Life: 100
+  AxisSpeed: 0.2
+  OrbitSpeed: 0.1
+  YOffset: 0
+  RotateClockwise: 0
+  Diameter: 2.3
+  Gravity: 10
+  InfluenceRadiusGravity: 4
+  GravityForcePerDistance:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  PlayerPlanet: 1
