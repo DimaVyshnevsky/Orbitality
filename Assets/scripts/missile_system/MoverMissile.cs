@@ -1,6 +1,9 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
+﻿using System;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
+using physics;
+using Random = UnityEngine.Random;
 
 namespace missile_system
 {
@@ -10,10 +13,11 @@ namespace missile_system
         [SerializeField] private bool _fire;
         [SerializeField] private MissileConfig _config;
 
-        [SerializeField] private UnityEvent ExplosionEvent;
+        [SerializeField] private UnityEvent InteractionEvent;
         [SerializeField] private UnityEvent OnCollisionEnterEvent;
 
         private float _speed;
+        private bool _interaction;
 
         private void Awake()
         {
@@ -28,7 +32,10 @@ namespace missile_system
             if (!_fire)
                 return;
 
-            _rig.AddForce(transform.forward * _speed * Time.fixedDeltaTime);
+            Vector3 movementDirection = transform.forward * _speed *Time.fixedDeltaTime;
+            movementDirection = GravitySystem.Instance.CorrectMovement(transform.position, movementDirection);
+
+            _rig.AddForce(movementDirection);
 
             transform.LookAt(transform.position + _rig.velocity);
            
@@ -51,17 +58,16 @@ namespace missile_system
         
                 _fire = true;
         }
-
         
         private IEnumerator TimerOn(float time)
         {
             yield return new WaitForSeconds(time);
-            Explosion();
+            InteractionEvent?.Invoke();
         }
 
-        public void Explosion()
+        public void Interaction(Transform tr)
         {
-            ExplosionEvent?.Invoke();
+            InteractionEvent?.Invoke();
         }
 
         public void DestroyMissile()

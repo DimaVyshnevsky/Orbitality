@@ -49,7 +49,7 @@ MonoBehaviour:
   _rig: {fileID: 63622581594137708}
   _fire: 0
   _config: {fileID: 11400000, guid: 7c5d9b28964c88a5aa55a3700a42771a, type: 2}
-  ExplosionEvent:
+  InteractionEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3189878253374085326}

@@ -16,7 +16,7 @@ namespace star_system
         public bool RotateClockwise;
         [Range(1, 5)] public float Diameter;
         public float Gravity;
-        public float InfluenceRadiusGravity;
+        public float InfluenceGravityRadius;
         public AnimationCurve GravityForcePerDistance;
 
         public bool PlayerPlanet;

@@ -16,11 +16,12 @@ namespace star_system
         private PlanetConfig _config;
         private float _lifes;
 
-        private PlanetConfig Data => _config;
-        private float Lifes => _lifes;
+        public PlanetConfig Data => _config;
+        public float Lifes => _lifes;
 
         public void Init(PlanetConfig config, Transform sun)
         {
+            _config = config;
             _lifes = config.Life;
             _orbit.Init(config.EllipsePosition.x, config.EllipsePosition.y, config.OrbitSpeed, config.YOffset, config.RotateClockwise, sun);
             _axisRotation.Init(config.AxisSpeed);
