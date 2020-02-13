@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7262022238124854156}
   - component: {fileID: 5625848329919209188}
   - component: {fileID: 4380173438935141499}
+  - component: {fileID: 536255859}
   m_Layer: 0
   m_Name: saturn
   m_TagString: Untagged
@@ -124,6 +125,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!135 &536255859
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5462662124255822632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7340780962056047233
 GameObject:
   m_ObjectHideFlags: 0

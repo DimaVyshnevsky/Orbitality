@@ -166,7 +166,7 @@ MonoBehaviour:
   faceRenderMask: 0
   shapeSettings: {fileID: 11400000, guid: 31bd3335a8a68c10c87b9578266146a8, type: 2}
   colourSettings: {fileID: 11400000, guid: 8c44661f1809fed769998eb95c987c5e, type: 2}
-  shapeSettingsFoldout: 1
+  shapeSettingsFoldout: 0
   colourSettingsFoldout: 0
   meshFilters:
   - {fileID: 0}
